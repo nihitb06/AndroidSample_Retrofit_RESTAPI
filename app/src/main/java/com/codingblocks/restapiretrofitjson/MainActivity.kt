@@ -22,19 +22,19 @@ class MainActivity : AppCompatActivity() {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             window.setStatusBarColor(getResources().getColor(R.color.colorMain))
         getSupportActionBar()?.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.colorMain)))
-
+        //Shows you Post Activity
         btnPosts.setOnClickListener({
             startActivity(Intent(this@MainActivity, PostsActivity::class.java))
         })
-
+        //Shows Users Activity
         btnUsers.setOnClickListener({
             startActivity(Intent(this@MainActivity, UsersActivity::class.java))
         })
-
+        //Shows Todos Activity
         btnTodos.setOnClickListener({
             startActivity(Intent(this@MainActivity, TodosActivity::class.java))
         })
-
+        //Shows Albums Activity
         btnAlbums.setOnClickListener({
             startActivity(Intent(this@MainActivity, AlbumsActivity::class.java))
         })
